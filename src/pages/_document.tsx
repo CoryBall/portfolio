@@ -4,6 +4,7 @@ import Document, {
   Main,
   NextScript,
   DocumentContext,
+  Head,
 } from 'next/document'
 import { DocumentInitialProps } from 'next/dist/next-server/lib/utils'
 
@@ -17,6 +18,7 @@ class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en">
+        <Head />
         <body>
           <Main />
           <NextScript />
