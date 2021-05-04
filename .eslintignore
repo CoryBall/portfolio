@@ -1,4 +1,6 @@
-**/node_modules/*
-**/out/*
-**/.next/*
-**/public/*
+node_modules
+.next
+build
+dist
+public
+src/styles

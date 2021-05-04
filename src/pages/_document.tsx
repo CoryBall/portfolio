@@ -18,7 +18,32 @@ class MyDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="en">
-        <Head />
+        <Head>
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="true"
+          />
+          <link
+            rel="preload"
+            as="style"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+          />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+            media="print"
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            onLoad="this.media='all'"
+          />
+          <noscript>
+            <link
+              rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+            />
+          </noscript>
+        </Head>
         <body>
           <Main />
           <NextScript />

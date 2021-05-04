@@ -1,15 +1,19 @@
-import { RecordButton } from '../components/animations'
-import BouncyText from '../components/animations/bouncyText'
+import React from 'react';
+import { NextPage } from 'next'
+import { Header } from '../components/common'
+import { Intro, Background, Skills, Experience } from '../components/home'
 
-export const Home = (): JSX.Element => (
-  <div className="h-full flex flex-col items-center justify-center">
-    <div className="h-28 w-1/6">
-      <BouncyText text="Cory Ball" />
-    </div>
-    <div className="h-24 w-24">
-      <RecordButton />
-    </div>
-  </div>
-)
+const Home: NextPage = () => {
 
-export default Home
+  return (
+    <div className="flex flex-col bg-light items-center">
+      <Header/>
+      <Intro />
+      <Background />
+      <Skills />
+      <Experience />
+    </div>
+  )
+}
+
+export default Home;

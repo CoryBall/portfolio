@@ -21,24 +21,24 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="description"
-          content="Cory Ball's web development journey"
+          content="Cory Ball's Developer Portfolio"
         />
-        <meta name="keywords" content="Portfolio" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta name="keywords" content="portfolio,cory,ball,software,web,development,engineer,engineering" />
+        <link rel="manifest" href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/manifest.json" />
         <link
-          href="/icons/favicon-16x16.png"
+          href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/icons/favicon-16x16.png"
           rel="icon"
           type="image/png"
           sizes="16x16"
         />
         <link
-          href="/icons/favicon-32x32.png"
+          href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/icons/favicon-32x32.png"
           rel="icon"
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
-        <meta name="theme-color" content="#317EFB" />
+        <link rel="apple-touch-icon" href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/apple-icon.png" />
+        <meta name="theme-color" content="#AED9E0" />
       </Head>
       <div className="flex flex-col h-screen w-screen">
         <AppProvider>
