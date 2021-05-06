@@ -7,11 +7,14 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex flex-col bg-light items-center">
+      <a className="skip-link" href={"#mainContent"}>Skip to main</a>
       <Header/>
-      <Intro />
-      <Background />
-      <Skills />
-      <Experience />
+      <main id="mainContent">
+        <Intro />
+        <Background />
+        <Skills />
+        <Experience />
+      </main>
     </div>
   )
 }
