@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'react-tabs/style/react-tabs.css'
 import React from 'react'
 import { NextPage } from 'next'
 import { AppProps } from 'next/app'
@@ -27,18 +28,18 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
         <meta name="keywords" content="portfolio,cory,ball,software,web,development,engineer,engineering" />
         <link rel="manifest" href={"/manifest.json"} />
         <link
-          href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/icons/favicon-16x16.png"
+          href={"/icons/favicon-16x16.png"}
           rel="icon"
           type="image/png"
           sizes="16x16"
         />
         <link
-          href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/icons/favicon-32x32.png"
+          href={"/icons/favicon-32x32.png"}
           rel="icon"
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/apple-icon.png" />
+        <link rel="apple-touch-icon" href={"/apple-icon.png"} />
         <meta name="theme-color" content="#AED9E0" />
       </Head>
       <div className="flex flex-col h-screen w-screen">
@@ -54,6 +55,6 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
       </div>
     </>
   )
-};
+}
 
 export default MyApp

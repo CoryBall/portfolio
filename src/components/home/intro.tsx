@@ -22,7 +22,7 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="self-start text-xl font-sans text-dark">
+        className="self-start text-xl font-sans text-dark mt-3">
         Hi, I'm
       </motion.span>
       <br/>
@@ -88,7 +88,7 @@ const Intro: React.FC = () => {
       >
         coryball97@gmail.com
       </motion.a>
-      <div className="flex flex-col sm:flex-row sm:justify-center">
+      <div className="flex flex-col sm:flex-row sm:justify-center lg:mt-8">
         <motion.button
           initial="hidden"
           animate="visible"
@@ -105,7 +105,7 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button mt-6">
+          className="button">
           <Link href={"#background"}>
             About Me
           </Link>
@@ -126,7 +126,7 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button mt-6">
+          className="button">
           <Link href={"#skills"}>
             Skills
           </Link>
@@ -147,7 +147,7 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button mt-6">
+          className="button">
           <Link href={"#experience"}>
             Experience
           </Link>
