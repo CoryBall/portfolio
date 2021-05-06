@@ -14,11 +14,11 @@ module.exports = {
         serif: ['Martel', ...defaultTheme.fontFamily.serif]
       },
       colors: {
-        'primary': '#AED9E0',
-        'secondary': '#B8F2E6',
-        'info': '#FFA69E',
-        'light': '#FAF3DD',
-        'dark': '#5E6472'
+        'primary': '#123C69',
+        'secondary': '#EDC7B7',
+        'info': '#AC3B61',
+        'light': '#EEE2DC',
+        'dark': '#BAB2B5'
       },
       animation: {
         'bounceSlow': 'bounceSlow 1s infinite'

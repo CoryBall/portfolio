@@ -9,7 +9,7 @@ const Background: React.FC = () => {
             Background
           </span>
       </div>
-      <div className="w-full md:w-2/3 text-center md:text-right self-end space-y-6">
+      <div className="w-full md:w-2/3 text-center md:text-right self-end space-y-6 mt-5 sm:mt-2">
         <span className="block text-md font-light text-dark">
           I'm currently a Full Stack Developer at AltiView Tech Group LLC
           that works closely with clients to deliver tailor-made solutions.
@@ -21,11 +21,13 @@ const Background: React.FC = () => {
           Besides coding, I like to fill my time with guitar, games, friends, and family.
         </span>
       </div>
-      <button className="button">
-        <Link href={"#skills"}>
-          Skills
-        </Link>
-      </button>
+      <div>
+        <button className="button">
+          <Link href={"#skills"}>
+            Skills
+          </Link>
+        </button>
+      </div>
     </section>
   )
 }

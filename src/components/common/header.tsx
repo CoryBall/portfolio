@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Header: React.FC = () => {
   return (
-    <motion.nav className="fixed w-full flex justify-between text-dark px-8 py-5 h-30">
+    <motion.nav className="fixed w-full flex justify-between text-light px-8 py-5 h-30">
         <a
           className="focus:outline-none text-2xl font-bold font-serif mt-3"
           href="/"
@@ -13,10 +13,10 @@ const Header: React.FC = () => {
           CB
         </a>
         <div>
-          <Link href="https://github.com/coryball">
+          <Link href={"/github-light.png"}>
             <a target="_blank">
               <Image
-                src="https://coryball.sfo3.digitaloceanspaces.com/portfolio/social/github.png"
+                src="https://coryball.sfo3.digitaloceanspaces.com/portfolio/social/github-light.png"
                 alt="Github Icon"
                 width={50}
                 height={50}

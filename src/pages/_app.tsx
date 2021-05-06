@@ -5,6 +5,7 @@ import { AppProps } from 'next/app'
 import { AnimateSharedLayout } from 'framer-motion'
 import { AppProvider } from '../components/hoc'
 import Head from 'next/head'
+import { Header } from '../components/common'
 
 const MyApp: NextPage<AppProps> = (props: AppProps) => {
   const { Component, pageProps } = props
@@ -24,7 +25,7 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
           content="Cory Ball's Developer Portfolio"
         />
         <meta name="keywords" content="portfolio,cory,ball,software,web,development,engineer,engineering" />
-        <link rel="manifest" href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/manifest.json" />
+        <link rel="manifest" href={"/manifest.json"} />
         <link
           href="https://coryball.sfo3.digitaloceanspaces.com/portfolio/icons/favicon-16x16.png"
           rel="icon"
@@ -43,12 +44,16 @@ const MyApp: NextPage<AppProps> = (props: AppProps) => {
       <div className="flex flex-col h-screen w-screen">
         <AppProvider>
           <AnimateSharedLayout>
-            <Component {...pageProps} />
+            <Header/>
+            <a className="skip-link" href={"#mainContent"}>Skip to main</a>
+            <main id="mainContent">
+              <Component {...pageProps} />
+            </main>
           </AnimateSharedLayout>
         </AppProvider>
       </div>
     </>
   )
-}
+};
 
 export default MyApp

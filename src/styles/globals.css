@@ -20,7 +20,7 @@ body {
 }
 
 .button {
-  @apply text-primary font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce
+  @apply text-secondary font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce
 }
 
 .skip-link {
