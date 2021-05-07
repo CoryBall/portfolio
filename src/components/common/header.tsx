@@ -13,9 +13,9 @@ const Header: React.FC = () => {
           CB
         </a>
         <div>
-          <Link href={"/github-light.png"}>
-            <a target="_blank">
-              <Image
+          <Link href={"https://github.com/coryball"}>
+            <a target="_blank" rel="noreferrer">
+              <img
                 src="https://coryball.sfo3.digitaloceanspaces.com/portfolio/social/github-light.png"
                 alt="Github Icon"
                 width={50}

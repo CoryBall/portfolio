@@ -6,7 +6,7 @@ import React from 'react'
 const Intro: React.FC = () => {
   return (
     <section id="intro" className="section flex-col">
-      <motion.span
+      <motion.p
         initial="hidden"
         animate="visible"
         variants={{
@@ -22,11 +22,10 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="self-start text-xl font-sans text-dark mt-3">
+        className="self-start text-xl font-sans text-dark mb-4">
         Hi, I'm
-      </motion.span>
-      <br/>
-      <motion.span
+      </motion.p>
+      <motion.p
         initial="hidden"
         animate="visible"
         variants={{
@@ -44,9 +43,8 @@ const Intro: React.FC = () => {
         }}
         className="hover:animate-pulse block text-4xl md:text-6xl 2xl:text-8xl font-serif font-bold text-info">
         Cory Ball
-      </motion.span>
-      <br/>
-      <motion.span
+      </motion.p>
+      <motion.p
         initial="hidden"
         animate="visible"
         variants={{
@@ -62,9 +60,9 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-md md:text-xl lg:text-2xl font-sans text-dark mt-5">
+        className="text-md md:text-xl lg:text-2xl font-sans text-dark my-5">
         A Northwest Arkansas Full Stack Developer with experience creating responsive web apps, cross-platform mobile apps, and modular backend API services
-      </motion.span>
+      </motion.p>
       <motion.a
         initial="hidden"
         animate="visible"
@@ -81,14 +79,14 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-info font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse mt-6"
+        className="text-info font-semibold text-xl text-center hover:animate-pulse mt-6"
         href="mailto:coryball97@gmail.com"
         target="_blank"
         title="email"
       >
         coryball97@gmail.com
       </motion.a>
-      <div className="flex flex-col sm:flex-row sm:justify-center lg:mt-8">
+      <div className="flex flex-col sm:flex-row sm:justify-center mt-8">
         <motion.button
           initial="hidden"
           animate="visible"

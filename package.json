@@ -13,6 +13,9 @@
     "test-all": "yarn lint && yarn type-check && yarn test"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.0.19",
     "@tailwindcss/forms": "^0.3.2",

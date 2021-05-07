@@ -26,12 +26,12 @@ class MyDocument extends Document {
           />
           <link
             rel="preload"
-            as="style"
-            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+            as="font"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700&display=swap"
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+            href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700&display=swap"
             media="print"
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <noscript>
             <link
               rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700"
+              href="https://fonts.googleapis.com/css?family=Karla:400,700|Martel:400,700&display=swap"
             />
           </noscript>
         </Head>
