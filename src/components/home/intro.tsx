@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronDown, faChevronUp, faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
 const Intro: React.FC = () => {
   return (
@@ -85,6 +86,30 @@ const Intro: React.FC = () => {
         title="email"
       >
         coryball97@gmail.com
+      </motion.a>
+      <motion.a
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            opacity: 0,
+            scale: 0,
+          },
+          visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+              delay: 2.5,
+            },
+          },
+        }}
+        className="text-info font-semibold text-xl text-center hover:animate-pulse mt-6"
+        href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
+        target="_blank"
+        title="resume"
+      >
+        CV
+        <FontAwesomeIcon className="self-start md:self-center text-info ml-4 mt-2 md:mt-0 text-xl" icon={faFileDownload}/>
       </motion.a>
       <div className="flex flex-col sm:flex-row sm:justify-center mt-8">
         <motion.button
