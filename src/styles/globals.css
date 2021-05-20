@@ -11,63 +11,63 @@ body {
 }
 
 .cursor {
-  @apply fixed left-0 top-0 w-8 h-8 rounded-full bg-info
+  @apply fixed left-0 top-0 w-8 h-8 rounded-full bg-info;
 }
 
 .button {
-  @apply text-secondary font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce
+  @apply text-info font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce;
 }
 
 .section {
-  @apply flex-none md:flex w-3/4 lg:w-1/2 text-center
+  @apply flex-none md:flex w-3/4 lg:w-1/2 text-center;
 }
 
 .section__title {
-  @apply w-full md:w-1/3 md:mr-8 text-center md:text-left font-serif font-bold text-info text-2xl  md:text-3xl
+  @apply w-full md:w-1/3 md:mr-8 text-center md:text-left font-serif font-bold text-secondary text-2xl  md:text-3xl;
 }
 
 .section__content {
-  @apply w-full md:w-2/3
+  @apply w-full md:w-2/3;
 }
 
 .skill {
-  @apply w-1/2 md:w-1/3 md:mx-4
+  @apply w-1/2 md:w-1/3 md:mx-4;
 }
 
 .skill__title {
-  @apply text-xl font-serif font-semibold text-dark border-b-2 border-info mb-2
+  @apply text-xl font-serif font-semibold text-dark border-b-2 border-info mb-2;
 }
 
 .skill_item {
-  @apply text-lg font-light font-sans text-light
+  @apply text-lg font-light font-sans text-light;
 }
 
 .job__header {
-  @apply flex text-dark justify-between mb-4
+  @apply flex text-light justify-between mb-4;
 }
 
 .job__title {
-  @apply flex flex-col md:flex-row justify-between w-full
+  @apply flex flex-col md:flex-row justify-between w-full;
 }
 
 .job__name {
-  @apply text-lg font-serif text-left font-bold
+  @apply text-lg font-serif text-left font-bold;
 }
 
 .job__date {
-  @apply text-sm text-left md:text-right
+  @apply text-sm text-left md:text-right;
 }
 
 .job__position {
-  @apply text-secondary font-serif font-light text-left
+  @apply text-secondary font-serif font-light text-left;
 }
 
 .job__arrow {
-  @apply self-start md:self-center text-info ml-4 mt-2 md:mt-0 text-xl
+  @apply self-start md:self-center text-info ml-4 mt-2 md:mt-0 text-xl;
 }
 
 .job__description {
-  @apply text-info text-sm text-left bg-light rounded-lg my-4 md:mx-4 px-5 py-2
+  @apply text-dark text-sm text-left bg-light rounded-lg my-4 md:mx-4 px-5 py-2;
 }
 
 .skip-link {

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faChevronUp, faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 
 const Intro: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const Intro: React.FC = () => {
         variants={{
           hidden: {
             opacity: 0,
-            x: "-100%",
+            x: '-100%',
           },
           visible: {
             opacity: 1,
@@ -23,7 +23,8 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="self-start text-xl font-sans text-dark mb-4">
+        className="self-start text-xl font-sans text-light mb-4"
+      >
         Hi, I'm
       </motion.p>
       <motion.p
@@ -42,7 +43,8 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="hover:animate-pulse block text-4xl md:text-6xl 2xl:text-8xl font-serif font-bold text-info">
+        className="hover:animate-pulse block text-4xl md:text-6xl 2xl:text-8xl font-serif font-bold text-secondary"
+      >
         Cory Ball
       </motion.p>
       <motion.p
@@ -51,7 +53,7 @@ const Intro: React.FC = () => {
         variants={{
           hidden: {
             opacity: 0,
-            y: "200%",
+            y: '200%',
           },
           visible: {
             opacity: 1,
@@ -61,8 +63,11 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-md md:text-xl lg:text-2xl font-sans text-dark my-5">
-        A Northwest Arkansas Full Stack Developer with experience creating responsive web apps, cross-platform mobile apps, and modular backend API services
+        className="text-md md:text-xl lg:text-2xl font-sans text-light my-5"
+      >
+        A Northwest Arkansas Full Stack Developer with experience creating
+        responsive web apps, cross-platform mobile apps, and modular backend API
+        services
       </motion.p>
       <motion.a
         initial="hidden"
@@ -80,7 +85,7 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-info font-semibold text-xl text-center hover:animate-pulse mt-6"
+        className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
         href="mailto:coryball97@gmail.com"
         target="_blank"
         title="email"
@@ -103,13 +108,16 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-info font-semibold text-xl text-center hover:animate-pulse mt-6"
+        className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
         href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
         target="_blank"
         title="resume"
       >
         CV
-        <FontAwesomeIcon className="self-start md:self-center text-info ml-4 mt-2 md:mt-0 text-xl" icon={faFileDownload}/>
+        <FontAwesomeIcon
+          className="self-start md:self-center text-secondary ml-4 mt-2 md:mt-0 text-xl"
+          icon={faFileDownload}
+        />
       </motion.a>
       <div className="flex flex-col sm:flex-row sm:justify-center mt-8">
         <motion.button
@@ -128,10 +136,9 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button">
-          <Link href={"#background"}>
-            About Me
-          </Link>
+          className="button"
+        >
+          <Link href={'#background'}>About Me</Link>
         </motion.button>
         <motion.button
           initial="hidden"
@@ -149,10 +156,9 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button">
-          <Link href={"#skills"}>
-            Skills
-          </Link>
+          className="button"
+        >
+          <Link href={'#skills'}>Skills</Link>
         </motion.button>
         <motion.button
           initial="hidden"
@@ -170,14 +176,13 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="button">
-          <Link href={"#experience"}>
-            Experience
-          </Link>
+          className="button"
+        >
+          <Link href={'#experience'}>Experience</Link>
         </motion.button>
       </div>
     </section>
   )
 }
 
-export default Intro;
+export default Intro
