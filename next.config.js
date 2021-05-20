@@ -1,10 +1,15 @@
-const withTM = require('next-transpile-modules')(['@react-three/drei', 'three']);
+const withPWA = require('next-pwa')
+const runtimeCaching = require('next-pwa/cache')
 
-module.exports = withTM({
+module.exports = withPWA({
   future: {
     webpack5: true,
   },
   images: {
-    domains: ['coryball.sfo3.digitaloceanspaces.com']
-  }
-});
+    domains: ['https://cdn.coryball.dev'],
+  },
+  pwa: {
+    dest: 'public',
+    runtimeCaching,
+  },
+})

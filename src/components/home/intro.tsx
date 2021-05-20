@@ -25,7 +25,7 @@ const Intro: React.FC = () => {
         }}
         className="self-start text-xl font-sans text-light mb-4"
       >
-        Hi, I'm
+        Hi, I&apos;m
       </motion.p>
       <motion.p
         initial="hidden"
@@ -111,6 +111,7 @@ const Intro: React.FC = () => {
         className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
         href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
         target="_blank"
+        rel="noreferrer"
         title="resume"
       >
         CV

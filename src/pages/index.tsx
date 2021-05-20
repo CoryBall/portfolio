@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <Experience />
       <div className="w-3/4 flex flex-col md:flex-row space-y-8 md:justify-center md:space-x-12 md:space-y-0">
         <a
-          className="bg-info text-white font-semibold text-xl py-2 px-4 rounded-md self-center text-center"
+          className="bg-primary text-light font-semibold text-xl py-2 px-4 rounded-md self-center text-center"
           href="mailto:coryball97@gmail.com"
           target="_blank"
           title="email"
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           />
         </a>
         <a
-          className="bg-info text-white font-semibold text-xl py-2 px-4 rounded-md self-center text-center"
+          className="bg-primary text-light font-semibold text-xl py-2 px-4 rounded-md self-center text-center"
           href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
           target="_blank"
           title="resume"

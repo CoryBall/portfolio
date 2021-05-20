@@ -15,7 +15,7 @@ body {
 }
 
 .button {
-  @apply text-info font-semibold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce;
+  @apply text-light font-bold text-xl py-2 px-4 rounded-md self-center text-center hover:animate-pulse animate-bounce;
 }
 
 .section {
