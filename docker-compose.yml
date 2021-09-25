@@ -3,23 +3,12 @@ version: '3.8'
 services:
   portfolio:
     container_name: portfolio
-    image: docker.pkg.github.com/coryball/portfolio/portfolio
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    image: ghcr.io/coryball/portfolio/portfolio:latest
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
-    networks:
-      web:
-        aliases:
-          - portfolio
-    volumes:
-      - $DOCKER_DATA/portfolio/public:/app/public
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.rule=Host(`www.coryball.dev`)"
-      - "traefik.http.routers.portfolio.tls.certresolver=leresolver"
-      - "traefik.http.routers.portfolio.service=portfolio"
-      - "traefik.http.services.portfolio.loadbalancer.server.port=3000"
-networks:
-  web:
-    external: true

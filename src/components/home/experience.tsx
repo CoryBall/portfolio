@@ -1,33 +1,30 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import { JobDropDown } from '../common'
 
 const Experience: React.FC = () => {
-  const [jobIndex, setJobIndex] = React.useState<number>(0)
-  function toggleJob(index: number): void {
-    setJobIndex(jobIndex === index ? 0 : index)
-  }
   return (
     <section id="experience" className="section space-y-12 sm:space-y-0">
       <span className="section__title">Experience</span>
       <ul className="section__content text-center md:text-right">
-        <li onClick={() => toggleJob(1)} className="job__header">
-          <div className="job__title">
-            <div>
-              <p className="job__name">AltiView Tech Group</p>
-              <p className="job__position">Full Stack Engineer</p>
-            </div>
-            <p className="job__date">Aug 2019 - May 2021</p>
-          </div>
-          <FontAwesomeIcon
-            className="job__arrow"
-            icon={jobIndex === 1 ? faChevronUp : faChevronDown}
-          />
-        </li>
-        <li
-          className={`${jobIndex === 1 ? 'block' : 'hidden'} job__description`}
+        <JobDropDown
+          employer="Teslar Software"
+          position="Software Engineer"
+          startDate={new Date(2021, 6)}
+        >
+          <p>
+            Enterprise level software development in a SCRUM-based environment.
+          </p>
+          <br />
+          <p>
+            Organized SCRUM sprints working on both large team projects and
+            individual bug fixing and smaller projects
+          </p>
+        </JobDropDown>
+        <JobDropDown
+          employer="AltiView Tech Group"
+          position="Full Stack Engineer"
+          startDate={new Date(2019, 7)}
+          endDate={new Date(2021, 4)}
         >
           <p className="text-md">Developed custom software including:</p>
           <ul className="list-disc ml-4 text-left">
@@ -44,24 +41,12 @@ const Experience: React.FC = () => {
             </li>
             <li>State management using both Flux and React Context</li>
           </ul>
-        </li>
-        <li onClick={() => toggleJob(2)} className="job__header">
-          <div className="job__title">
-            <div>
-              <p className="job__name">Best Buy</p>
-              <p className="job__position">Verizon Solutions Expert</p>
-            </div>
-            <p className="job__date">Nov 2016 - Jan 2019</p>
-          </div>
-          <FontAwesomeIcon
-            className="job__arrow"
-            icon={jobIndex === 2 ? faChevronUp : faChevronDown}
-          />
-        </li>
-        <li
-          className={`${
-            jobIndex === 2 ? 'block' : 'hidden'
-          } job__description space-y-4`}
+        </JobDropDown>
+        <JobDropDown
+          employer="Best Buy"
+          position="Verizon Solutions Expert"
+          startDate={new Date(2016, 10)}
+          endDate={new Date(2019, 0)}
         >
           <p>
             Starting as a seasonal computer sales consultant, I was quickly
@@ -72,24 +57,12 @@ const Experience: React.FC = () => {
             Multiple Black Fridays and mentoring both new and experienced
             employees developed consistency and communication skills
           </p>
-        </li>
-        <li onClick={() => toggleJob(3)} className="job__header">
-          <div className="job__title">
-            <div className="md:w-1/2">
-              <p className="job__name">Northwest Arkansas Community College</p>
-              <p className="job__position">Computer Science</p>
-            </div>
-            <p className="job__date">Aug 2015 - May 2017</p>
-          </div>
-          <FontAwesomeIcon
-            className="job__arrow"
-            icon={jobIndex === 2 ? faChevronUp : faChevronDown}
-          />
-        </li>
-        <li
-          className={`${
-            jobIndex === 3 ? 'block' : 'hidden'
-          } job__description space-y-4`}
+        </JobDropDown>
+        <JobDropDown
+          employer="Northwest Arkansas Community College"
+          position="Computer Science"
+          startDate={new Date(2015, 7)}
+          endDate={new Date(2017, 4)}
         >
           <ul className="list-disc ml-4 text-left">
             <li>
@@ -105,7 +78,7 @@ const Experience: React.FC = () => {
               methods
             </li>
           </ul>
-        </li>
+        </JobDropDown>
       </ul>
     </section>
   )

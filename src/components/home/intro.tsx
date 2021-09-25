@@ -69,57 +69,59 @@ const Intro: React.FC = () => {
         responsive web apps, cross-platform mobile apps, and modular backend API
         services
       </motion.p>
-      <motion.a
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: {
-            opacity: 0,
-            scale: 0,
-          },
-          visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-              delay: 2.5,
+      <div className="flex flex-col md:flex-row w-3/4 items-center mx-auto md:justify-around">
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+              scale: 0,
             },
-          },
-        }}
-        className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
-        href="mailto:coryball97@gmail.com"
-        target="_blank"
-        title="email"
-      >
-        coryball97@gmail.com
-      </motion.a>
-      <motion.a
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: {
-            opacity: 0,
-            scale: 0,
-          },
-          visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-              delay: 2.5,
+            visible: {
+              opacity: 1,
+              scale: 1,
+              transition: {
+                delay: 2.5,
+              },
             },
-          },
-        }}
-        className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
-        href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
-        target="_blank"
-        rel="noreferrer"
-        title="resume"
-      >
-        CV
-        <FontAwesomeIcon
-          className="self-start md:self-center text-secondary ml-4 mt-2 md:mt-0 text-xl"
-          icon={faFileDownload}
-        />
-      </motion.a>
+          }}
+          className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
+          href="mailto:coryball97@gmail.com"
+          target="_blank"
+          title="email"
+        >
+          coryball97@gmail.com
+        </motion.a>
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+              scale: 0,
+            },
+            visible: {
+              opacity: 1,
+              scale: 1,
+              transition: {
+                delay: 2.5,
+              },
+            },
+          }}
+          className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
+          href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
+          target="_blank"
+          rel="noreferrer"
+          title="resume"
+        >
+          CV
+          <FontAwesomeIcon
+            className="self-start md:self-center text-secondary ml-4 mt-2 md:mt-0 text-xl"
+            icon={faFileDownload}
+          />
+        </motion.a>
+      </div>
       <div className="flex flex-col sm:flex-row sm:justify-center mt-8">
         <motion.button
           initial="hidden"

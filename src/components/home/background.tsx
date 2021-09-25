@@ -6,11 +6,8 @@ const Background: React.FC = () => {
       <span className="section__title">Background</span>
       <div className="section__content text-md text-center md:text-left font-semibold text-light space-y-4">
         <p>
-          I&apos;m currently a Full Stack Developer at AltiView Tech Group LLC
-          that works closely with clients to deliver tailor-made solutions.
-          Being part of a smaller team has improved credibility and
-          problem-solving skills, while keeping teamwork and communication
-          skills sharp when needed.
+          I&apos;m currently a Software Engineer at Teslar Software, creating
+          and maintaining software to help make banks more efficient.
         </p>
         <p>
           When I&apos;m not working, I have many side-projects living either in
