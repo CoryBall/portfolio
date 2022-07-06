@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
+import { FaFileDownload } from 'react-icons/fa'
 
 const Intro: React.FC = () => {
   return (
@@ -63,11 +62,13 @@ const Intro: React.FC = () => {
             },
           },
         }}
-        className="text-md md:text-xl lg:text-2xl font-sans text-light my-5"
+        className="text-md md:text-xl lg:text-2xl font-sans text-light mt-5 mb-12"
       >
-        A Northwest Arkansas Full Stack Developer with experience creating
-        responsive web apps, cross-platform mobile apps, and modular backend API
-        services
+        A Full Stack Developer with experience solving complex architecture and
+        infrastructure problems.
+        <br />
+        Excelling in legacy and modern technologies with strong skills in C# and
+        JavaScript
       </motion.p>
       <div className="flex flex-col md:flex-row w-3/4 items-center mx-auto md:justify-around">
         <motion.a
@@ -109,17 +110,14 @@ const Intro: React.FC = () => {
               },
             },
           }}
-          className="text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
+          className="flex text-secondary font-semibold text-xl text-center hover:animate-pulse mt-6"
           href="https://cdn.coryball.dev/portfolio/resume/Resume_CoryBall.pdf"
           target="_blank"
           rel="noreferrer"
           title="resume"
         >
           CV
-          <FontAwesomeIcon
-            className="self-start md:self-center text-secondary ml-4 mt-2 md:mt-0 text-xl"
-            icon={faFileDownload}
-          />
+          <FaFileDownload className="self-center text-secondary ml-4 text-xl" />
         </motion.a>
       </div>
       <div className="flex flex-col sm:flex-row sm:justify-center mt-8">

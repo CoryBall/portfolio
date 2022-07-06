@@ -17,37 +17,43 @@ const Skills: React.FC = () => {
         </ul>
         <ul className="skill">
           <li className="skill__title">Frontend</li>
+          {['React', 'Webpack', 'Blazor', 'Redux', 'Tailwind CSS'].map(
+            (front: string) => (
+              <li key={front} className="skill_item">
+                {front}
+              </li>
+            )
+          )}
+        </ul>
+        <ul className="skill">
+          <li className="skill__title">Backend</li>
           {[
-            'React',
-            'Next.js',
-            'Blazor',
-            'ASP.NET WebForms',
-            'Tailwind CSS',
-          ].map((front: string) => (
-            <li key={front} className="skill_item">
-              {front}
+            'Microservices',
+            'Node.js',
+            'Express.js',
+            'ASP.NET Core',
+            'REST',
+            'GraphQL',
+          ].map((back: string) => (
+            <li key={back} className="skill_item">
+              {back}
             </li>
           ))}
         </ul>
         <ul className="skill">
-          <li className="skill__title">Backend</li>
-          {['Node.js', 'Express.js', 'ASP.NET Core', 'REST', 'GraphQL'].map(
-            (back: string) => (
-              <li key={back} className="skill_item">
-                {back}
-              </li>
-            )
-          )}
-        </ul>
-        <ul className="skill">
           <li className="skill__title">Other</li>
-          {['Docker', 'Traefik', 'Linux', 'SSH', 'Postman'].map(
-            (environment: string) => (
-              <li key={environment} className="skill_item">
-                {environment}
-              </li>
-            )
-          )}
+          {[
+            'Docker',
+            'Traefik',
+            'Linux',
+            'Postman',
+            'Apollo GraphQL',
+            'Azure',
+          ].map((environment: string) => (
+            <li key={environment} className="skill_item">
+              {environment}
+            </li>
+          ))}
         </ul>
       </div>
     </section>

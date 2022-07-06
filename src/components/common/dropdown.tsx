@@ -1,5 +1,4 @@
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa'
 import React from 'react'
 
 type JobDropDownProps = {
@@ -58,10 +57,13 @@ const JobDropDown: React.FC<JobDropDownProps> = (props: JobDropDownProps) => {
             endDate ? displayDate(endDate) : 'Current'
           }`}</p>
         </div>
-        <FontAwesomeIcon
-          className="job__arrow"
-          icon={expanded ? faChevronUp : faChevronDown}
-        />
+        <div className="w-8">
+          {expanded ? (
+            <FaChevronUp className="job__arrow" />
+          ) : (
+            <FaChevronDown className="job__arrow" />
+          )}
+        </div>
       </div>
       <div className={`${expanded ? 'block' : 'hidden'} job__description`}>
         {children}
