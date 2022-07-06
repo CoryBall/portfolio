@@ -7,17 +7,95 @@ const Experience: React.FC = () => {
       <span className="section__title">Experience</span>
       <ul className="section__content text-center md:text-right">
         <JobDropDown
-          employer="Teslar Software"
-          position="Software Engineer"
+          employer="NephoCode"
+          position="Founder & CEO"
           startDate={new Date(2021, 6)}
         >
-          <p>
-            Enterprise level software development in a SCRUM-based environment.
+          <p className="font-semibold">
+            Freelance software agent specialized in custom solutions to fit
+            business needs of varying industries
           </p>
           <br />
+          <ul className="list-disc ml-4 text-left">
+            <li>
+              Working closely with clients, separating technical jargon from
+              user needs
+            </li>
+            <li>
+              Utilized Docker, Linux VPS, Google Play, and Apple App Store to
+              get solutions to the end user
+            </li>
+            <li>
+              Implemented many complex technologies, such as multi-tenanted
+              websites and cross-platform mobile apps
+            </li>
+            <li>
+              Some clients required complex infrastructure involving
+              microservices, reverse proxies, load-balancers, and private
+              networks
+            </li>
+          </ul>
+        </JobDropDown>
+        <JobDropDown
+          employer="Netchex"
+          position="Software Engineer II"
+          startDate={new Date(2021, 11)}
+        >
+          <p className="font-semibold">
+            Company-wide impact working on critical features as well as
+            production issues
+          </p>
+          <br />
+          <ul className="list-disc ml-4 text-left">
+            <li>Led and motivated participation in Lunch and Learn program</li>
+            <li>
+              Researched and created new services and technologies alongside
+              Architecture and DevOps
+            </li>
+            <li>
+              Created and maintained services in a micro-service architecture
+            </li>
+            <li>
+              Utilized much of what Azure has to offer, often working closely
+              with DevOps
+            </li>
+            <li>Shadowed regression workflow multiple times</li>
+          </ul>
+          <br />
+          <p className="font-semibold">Feats</p>
+          <br />
+          <ul className="list-disc ml-4 text-left">
+            <li>
+              Reduced internal HTTP connections to high-traffick core services
+              by up to 50%
+            </li>
+            <li>
+              Implemented custom cache invalidation which prevented the company
+              from deploying UI services
+            </li>
+            <li>
+              Containerized majority of company services, allowing for easier
+              local development.
+              <ul className="list-disc ml-4 text-left">
+                <li>
+                  Pending production use, which will increase build and deploy
+                  speeds while reducing infrastructure cost
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </JobDropDown>
+        <JobDropDown
+          employer="Teslar Software"
+          position="Software Engineer (Mid Level)"
+          startDate={new Date(2021, 6)}
+          endDate={new Date(2021, 11)}
+        >
+          <p>Enterprise level software development in a AGILE environment.</p>
+          <br />
           <p>
-            Organized SCRUM sprints working on both large team projects and
-            individual bug fixing and smaller projects
+            Organized sprints working on both large team projects, bug
+            burndowns, and one-off projects
           </p>
         </JobDropDown>
         <JobDropDown
@@ -42,7 +120,7 @@ const Experience: React.FC = () => {
             <li>State management using both Flux and React Context</li>
           </ul>
         </JobDropDown>
-        <JobDropDown
+        {/* <JobDropDown
           employer="Best Buy"
           position="Verizon Solutions Expert"
           startDate={new Date(2016, 10)}
@@ -57,7 +135,7 @@ const Experience: React.FC = () => {
             Multiple Black Fridays and mentoring both new and experienced
             employees developed consistency and communication skills
           </p>
-        </JobDropDown>
+        </JobDropDown> */}
         <JobDropDown
           employer="Northwest Arkansas Community College"
           position="Computer Science"

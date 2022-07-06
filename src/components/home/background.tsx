@@ -6,8 +6,9 @@ const Background: React.FC = () => {
       <span className="section__title">Background</span>
       <div className="section__content text-md text-center md:text-left font-semibold text-light space-y-4">
         <p>
-          I&apos;m currently a Software Engineer at Teslar Software, creating
-          and maintaining software to help make banks more efficient.
+          I&apos;m currently a Software Engineer at Netchex, creating and
+          maintaining HR, Benefits, and Payroll solutions for companies across
+          America.
         </p>
         <p>
           When I&apos;m not working, I have many side-projects living either in
