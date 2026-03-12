@@ -1,6 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --font-sans: 'Karla', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Martel', ui-serif, Georgia, serif;
+
+  --color-primary: #3D5A80;
+  --color-secondary: #98C1D9;
+  --color-info: #EE6C4D;
+  --color-light: #E0FBFC;
+  --color-dark: #293241;
+
+  --animate-bounce-slow: bounceSlow 1s infinite;
+
+  @keyframes bounceSlow {
+    0%, 100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    50% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  }
+}
 
 body {
   height: 100vh;
@@ -8,7 +31,7 @@ body {
   @apply bg-dark;
 }
 
-#__next {
+#root {
   height: 100vh;
 }
 
@@ -25,7 +48,7 @@ body {
 }
 
 .section__title {
-  @apply w-full md:w-1/3 md:mr-8 text-center md:text-left font-serif font-bold text-secondary text-2xl  md:text-3xl;
+  @apply w-full md:w-1/3 md:mr-8 text-center md:text-left font-serif font-bold text-secondary text-2xl md:text-3xl;
 }
 
 .section__content {

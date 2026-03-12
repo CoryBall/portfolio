@@ -1,5 +1,5 @@
 import React from 'react'
-import { AnimateSharedLayout } from 'framer-motion'
+import { LayoutGroup } from 'framer-motion'
 import { AppProvider } from './components/hoc'
 import { Header } from './components/common'
 import { Intro, Background, Skills, Experience } from './components/home'
@@ -9,7 +9,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col h-screen">
       <AppProvider>
-        <AnimateSharedLayout>
+        <LayoutGroup>
           <Header />
           <a className="skip-link" href="#mainContent">
             Skip to main
@@ -44,7 +44,7 @@ const App: React.FC = () => {
               </div>
             </div>
           </main>
-        </AnimateSharedLayout>
+        </LayoutGroup>
       </AppProvider>
     </div>
   )
