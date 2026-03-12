@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 
 const Header: React.FC = () => {
@@ -13,16 +11,9 @@ const Header: React.FC = () => {
         CB
       </a>
       <div>
-        <Link href={'https://github.com/coryball'}>
-          <a target="_blank" rel="noreferrer">
-            <Image
-              src="/social/github-light.png"
-              alt="Github Icon"
-              width={50}
-              height={50}
-            />
-          </a>
-        </Link>
+        <a href="https://github.com/coryball" target="_blank" rel="noreferrer">
+          <img src="/social/github-light.png" alt="Github Icon" width={50} height={50} />
+        </a>
       </div>
     </motion.nav>
   )

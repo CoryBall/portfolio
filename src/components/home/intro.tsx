@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import React from 'react'
 import { FaFileDownload } from 'react-icons/fa'
 
@@ -139,7 +138,7 @@ const Intro: React.FC = () => {
           }}
           className="button"
         >
-          <Link href={'#background'}>About Me</Link>
+          <a href="#background">About Me</a>
         </motion.button>
         <motion.button
           initial="hidden"
@@ -159,7 +158,7 @@ const Intro: React.FC = () => {
           }}
           className="button"
         >
-          <Link href={'#skills'}>Skills</Link>
+          <a href="#skills">Skills</a>
         </motion.button>
         <motion.button
           initial="hidden"
@@ -179,7 +178,7 @@ const Intro: React.FC = () => {
           }}
           className="button"
         >
-          <Link href={'#experience'}>Experience</Link>
+          <a href="#experience">Experience</a>
         </motion.button>
       </div>
     </section>
